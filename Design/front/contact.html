@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <title>fringe | <?php echo $d->title; ?></title>
+
+    <!-- Define Charset -->
+    <meta charset="utf-8">
+
+    <!-- Responsive Metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Page Description and Author -->
+    <meta name="description" content="Margo - Responsive HTML5 Template">
+    <meta name="author" content="iThemesLab">
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="Design/front/assets/css/bootstrap.min.css" type="text/css" media="screen">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="Design/front/assets/css/font-awesome.min.css" type="text/css" media="screen">
+
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="Design/front/assets/css/slicknav.css" media="screen">
+
+    <!-- Margo CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="Design/front/assets/css/style.css" media="screen">
+
+    <!-- Responsive CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="Design/front/assets/css/responsive.css" media="screen">
+
+    <!-- Css3 Transitions Styles  -->
+    <link rel="stylesheet" type="text/css" href="Design/front/assets/css/animate.css" media="screen">
+
+    <!-- Color CSS Styles  -->
+
+    <link rel="stylesheet" type="text/css" href="Design/front/assets/colors/blue.css" title="blue" media="screen" />
+
+    <!-- Margo JS  -->
+    <script type="text/javascript" src="Design/front/assets/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.migrate.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/modernizrr.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/count-to.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.textillate.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.lettering.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/mediaelement-and-player.js"></script>
+    <script type="text/javascript" src="Design/front/assets/js/jquery.slicknav.js"></script>
+
+
+    <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+<!-- Full Body Container -->
+<div id="container">
+
+
+    <!-- Start Header Section -->
+    <div class="hidden-header"></div>
+    <header class="clearfix">
+
+        <!-- Start Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- Start Contact Info -->
+                        <ul class="contact-details">
+                            <li><a href="#"><i class="fa fa-map-marker"></i> <?php echo $d->address; ?></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-envelope-o"></i> <?php echo $d->email; ?></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-phone"></i> <?php echo $d->phone; ?></a>
+                            </li>
+                        </ul>
+                        <!-- End Contact Info -->
+                    </div>
+                    <!-- .col-md-6 -->
+
+                    <!-- .col-md-6 -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .top-bar -->
+        <!-- End Top Bar -->
+
+
+        <!-- Start  Logo & Naviagtion  -->
+        <div class="navbar navbar-default navbar-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Stat Toggle Nav Link For Mobiles -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- End Toggle Nav Link For Mobiles -->
+                    <a class="navbar-brand" href="home.php">
+                        <img alt="" src="Design/front/images/fringe.png">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <!-- Stat Search -->
+                    <div class="search-side">
+                        <a class="show-search"><i class="fa fa-search"></i></a>
+                        <div class="search-form">
+                            <form autocomplete="off" role="search" method="get" class="searchform" action="#">
+                                <input type="text" value="" name="s" id="s" placeholder="Search the site...">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Search -->
+                    <!-- Start Navigation List -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a  href="home.php">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.php">About</a>
+                        </li>
+                        <li><a class="active" href="contact.php">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- End Navigation List -->
+                </div>
+            </div>
+
+            <!-- Mobile Menu Start -->
+            <ul class="wpb-mobile-menu">
+                <li>
+                    <a  href="home.php">Home</a>
+                </li>
+                <li>
+                    <a href="about.php">About</a>
+                </li>
+                <li>
+                    <a class="active" href="contact.php">Contact</a>
+                </li>
+            </ul>
+            <!-- Mobile Menu End -->
+
+        </div>
+        <!-- End Header Logo & Naviagtion -->
+
+    </header>
+    <!-- End Header Section -->
+    <!-- Start Page Banner -->
+    <div class="page-banner" style="padding:40px 0; background: url(Design/front/images/slide-02-bg.jpg) center #f9f9f9;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>contact Us</h2>
+                    <p>We Are Professional</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Home</a></li>
+                        <li>contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Banner -->
+
+    <!-- Start Content -->
+    <div id="content">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-8">
+
+            <!-- Classic Heading -->
+            <h4 class="classic-title"><span>Contact Us</span></h4>
+
+            <!-- Start Contact Form -->
+            <form role="form" class="contact-form" id="contact-form" method="post">
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" placeholder="Name" name="name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="email" class="email" placeholder="Email" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" class="requiredField" placeholder="Subject" name="subject">
+                </div>
+              </div>
+
+              <div class="form-group">
+
+                <div class="controls">
+                  <textarea rows="7" placeholder="Message" name="message"></textarea>
+                </div>
+              </div>
+              <button type="submit" id="submit" class="btn-system btn-large">Send</button>
+              <div id="success" style="color:#34495e;"></div>
+            </form>
+            <!-- End Contact Form -->
+
+          </div>
+
+          <div class="col-md-4">
+
+            <!-- Classic Heading -->
+            <h4 class="classic-title"><span>Information</span></h4>
+
+            <!-- Divider -->
+            <div class="hr1" style="margin-bottom:10px;"></div>
+
+            <!-- Info - Icons List -->
+            <ul class="icons-list">
+              <li><i class="fa fa-globe">  </i> <strong>Address:</strong> <?php echo $d->address; ?></li>
+              <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> <?php echo $d->email; ?></li>
+              <li><i class="fa fa-mobile"></i> <strong>Phone:</strong> <?php echo $d->phone; ?></li>
+            </ul>
+
+            <!-- Divider -->
+            <div class="hr1" style="margin-bottom:15px;"></div>
+
+            <!-- Classic Heading -->
+            <h4 class="classic-title"><span>Working Hours</span></h4>
+
+            <!-- Info - List -->
+            <ul class="list-unstyled">
+                <!--
+              <li><strong>Monday - Friday</strong> - 9am to 5pm</li>
+              <li><strong>Saturday</strong> - 9am to 2pm</li>
+              <li><strong>Sunday</strong> - Closed</li>
+              -->
+                <?php echo $d->working; ?>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- End content -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row footer-widgets">
+
+
+                <!-- Start Subscribe & Social Links Widget -->
+                <div class="col-md-6 ">
+                    <div class="footer-widget mail-subscribe-widget">
+                        <!--
+                        <h4>Get in touch<span class="head-line"></span></h4>
+                        <p>Join our mailing list to stay up to date and get notices about our new releases!</p>
+                        <form class="subscribe">
+                            <input type="text" placeholder="mail@example.com">
+                            <input type="submit" class="btn-system" value="Send">
+                        </form>
+                        -->
+                    </div>
+
+
+                    <div class="col-md-7 col-xs-12">
+                        <div class="footer-widget contact-widget">
+
+                            <ul>
+                                <li><span>Phone Number:</span> +2 010 50 666 57</li>
+                                <li><span>Office:</span> +2 27 92 67 06</li>
+                                <li><span>Fax:</span> +2 27 92 67 06</li>
+                                <li><span>Email:</span> drwagdyyoussef@yahoo.co.uk</li>
+                                <li><span>Website:</span>  www.fringeadvancedsolutions.com</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- .col-md-3 -->
+                <!-- End Subscribe & Social Links Widget -->
+
+
+                <!-- Start Twitter Widget -->
+
+                <!-- .col-md-3 -->
+                <!-- End Twitter Widget -->
+
+
+                <!-- Start Flickr Widget -->
+
+                <!-- .col-md-3 -->
+                <!-- End Flickr Widget -->
+
+
+                <!-- Start Contact Widget -->
+
+                <!-- .col-md-3 -->
+                <!-- End Contact Widget -->
+
+
+            </div>
+            <!-- .row -->
+
+            <!-- Start Copyright -->
+            <div class="copyright-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2017 Fringe - All Rights Reserved <a rel="nofollow" href="http://fringe.com/"></a> </p>
+                    </div>
+                    <!-- .col-md-6 -->
+                    <div class="col-md-6">
+                        <ul class="footer-nav">
+                            <li><a href="#">Sitemap</a>
+                            </li>
+                            <li><a href="#">Privacy Policy</a>
+                            </li>
+                            <li><a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .col-md-6 -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- End Copyright -->
+
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+
+</div>
+<!-- End Full Body Container -->
+
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+<div id="loader">
+    <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+    </div>
+</div>
+
+<!-- Style Switcher
+<div class="switcher-box">
+    <a class="open-switcher show-switcher"><i class="fa fa-cog fa-2x"></i></a>
+    <h4>Style Switcher</h4>
+    <span>Predefined Color Skins</span>
+    <ul class="colors-list">
+        <li>
+            <a onClick="setActiveStyleSheet('white'); return false;" title="white" class="white"></a>
+        </li>
+        <li>
+            <a onClick="setActiveStyleSheet('sky-blue'); return false;" title="Sky Blue" class="sky-blue"></a>
+        </li>
+        <li>
+            <a onClick="setActiveStyleSheet('cyan'); return false;" title="Cyan" class="cyan"></a>
+        </li>
+    </ul>
+    <span>Layout Style</span>
+    <select id="layout-style" class="layout-style">
+        <option value="1">Wide</option>
+        <option value="2">Boxed</option>
+    </select>
+</div>
+-->
+<script type="text/javascript" src="Design/front/assets/js/script.js"></script>
+
+</body>
+
+</html>

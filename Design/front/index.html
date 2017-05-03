@@ -1,0 +1,513 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+
+  <!-- Basic -->
+  <title>fringe | <?php echo $d->title ?></title>
+  <!-- Define Charset -->
+  <meta charset="utf-8">
+
+  <!-- Responsive Metatag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Page Description and Author -->
+  <meta name="description" content="Margo - Responsive HTML5 Template">
+  <meta name="author" content="iThemesLab">
+
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="Design/front/assets/css/bootstrap.min.css" type="text/css" media="screen">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="Design/front/assets/css/font-awesome.min.css" type="text/css" media="screen">
+
+  <!-- Slicknav -->
+  <link rel="stylesheet" type="text/css" href="Design/front/assets/css/slicknav.css" media="screen">
+
+  <!-- Margo CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="Design/front/assets/css/style.css" media="screen">
+
+  <!-- Responsive CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="Design/front/assets/css/responsive.css" media="screen">
+
+  <!-- Css3 Transitions Styles  -->
+  <link rel="stylesheet" type="text/css" href="Design/front/assets/css/animate.css" media="screen">
+
+  <!-- Color CSS Styles  -->
+
+  <link rel="stylesheet" type="text/css" href="Design/front/assets/colors/blue.css" title="blue" media="screen" />
+
+  <!-- Margo JS  -->
+  <script type="text/javascript" src="Design/front/assets/js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.migrate.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/modernizrr.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/nivo-lightbox.min.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.appear.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/count-to.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.textillate.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.lettering.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.easypiechart.min.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/mediaelement-and-player.js"></script>
+  <script type="text/javascript" src="Design/front/assets/js/jquery.slicknav.js"></script>
+  
+
+  <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Full Body Container -->
+  <div id="container">
+
+
+    <!-- Start Header Section -->
+    <div class="hidden-header"></div>
+    <header class="clearfix">
+
+      <!-- Start Top Bar -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <!-- Start Contact Info -->
+                <?php foreach($contact as $con){ ?>
+              <ul class="contact-details">
+                <li><a href="#"><i class="fa fa-map-marker"></i> <?php echo $con->address ?></a>
+                </li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> <?php echo $con->email ?></a>
+                </li>
+                <li><a href="#"><i class="fa fa-phone"></i> <?php echo $con->phone ?></a>
+                </li>
+              </ul>
+                <?php } ?>
+              <!-- End Contact Info -->
+            </div>
+            <!-- .col-md-6 -->
+
+            <!-- .col-md-6 -->
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- .container -->
+      </div>
+      <!-- .top-bar -->
+      <!-- End Top Bar -->
+
+
+      <!-- Start  Logo & Naviagtion  -->
+      <div class="navbar navbar-default navbar-top">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- Stat Toggle Nav Link For Mobiles -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+            <!-- End Toggle Nav Link For Mobiles -->
+            <a class="navbar-brand" href="home.php">
+              <img alt="" src="Design/front/images/fringe.png">
+            </a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Stat Search -->
+            <div class="search-side">
+              <a class="show-search"><i class="fa fa-search"></i></a>
+              <div class="search-form">
+                <form autocomplete="off" role="search" method="get" class="searchform" action="#">
+                  <input type="text" value="" name="s" id="s" placeholder="Search the site...">
+                </form>
+              </div>
+            </div>
+            <!-- End Search -->
+            <!-- Start Navigation List -->
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="active" href="home.php">Home</a>
+              </li>
+              <li>
+                <a href="about.php">About</a>
+              </li>
+              <li><a href="contact.php">Contact</a>
+              </li>
+            </ul>
+            <!-- End Navigation List -->
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="wpb-mobile-menu">
+          <li>
+            <a class="active" href="home.php">Home</a>
+          </li>
+          <li>
+            <a href="about.php">About</a>
+          </li>
+          <li>
+            <a href="contact.php">Contact</a>
+          </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </div>
+      <!-- End Header Logo & Naviagtion -->
+
+    </header>
+    <!-- End Header Section -->
+
+
+    <!-- Start Home Page Slider -->
+    <section id="home">
+      <!-- Carousel -->
+      <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+
+        <!-- Carousel inner -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="img-responsive" src="Design/front/images/slider/bg1.jpg" alt="slider">
+            <div class="slider-content">
+              <div class="col-md-12 text-center">
+
+                <h2 class="animated2">
+                              <span>Welcome to <strong class="whitecolor">fringe</strong></span>
+                              </h2>
+                <h3 class="animated3">
+                                <span><?php echo $d->welcom ?> </span>
+                              </h3>
+
+
+
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+
+          <!--/ Carousel item end -->
+    </section>
+    <!-- End Home Page Slider -->
+
+
+    <!-- Start Services Section -->
+    <div class="section service">
+      <div class="container ">
+
+            <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+
+                <!-- Start Big Heading -->
+                <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+                    <h1>Who are  <strong>we?</strong></h1>
+                </div>
+                <!-- End Big Heading -->
+
+                <p class="text-center font"><?php echo $d->whoare ?></p>
+
+
+
+
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- End Services Section -->
+
+
+    <!-- Start Purchase Section -->
+    <div class="section purchase back">
+      <div class="container">
+
+        <!-- Start Video Section Content -->
+        <div class="section-video-content text-center ">
+            <style>
+                .back{
+                    font-weight: 300;
+                    background: url("Design/front/images/parallax/bg-01.jpg")
+                    fixed repeat;
+                }
+            </style>
+          <!-- Start Animations Text -->
+
+          <div class="container">
+
+
+            <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+              <h1>Our Great <strong>Team</strong></h1>
+            </div>
+
+
+            <h1 class=" wite-text   ">
+
+            <?php echo $d->team ?>
+          </h1>
+            <!--
+                       is a privately owned company working in the International IT market <br/>that focuses on delivering high end total integrated solutions. Those solutions vary from all types of <strong>IT </strong> infrastructures to end user software applications.
+            -->
+          <!-- End Animations Text -->
+
+
+        </div>
+        <!-- End Section Content -->
+
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- End Purchase Section -->
+    </div>
+
+    <!-- Start Portfolio Section -->
+    <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+
+    </div>
+    <!-- End Portfolio Section -->
+
+
+    <!-- Start Testimonials Section -->
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <!-- Start Recent Posts Carousel -->
+            <div class="latest-posts">
+              <h4 class="classic-title"><span>Abstract</span></h4>
+              <div class="latest-posts-classic custom-carousel touch-carousel" data-appeared-items="3">
+
+                <!-- Posts 1 -->
+                <div class="post-row item">
+                  <div class="left-meta-post">
+                    <div class="post-type"><i class="fa fa-anchor "></i></div>
+                  </div>
+                  <h3 class="post-title"><a href="#">Vision </a></h3>
+                  <div class="post-content font">
+                      <!--
+                      <p class="font">Our vision is to be recognized as one of the top companies in Middle East that is capable of supporting a wide range of system integration services and implementing the latest world class technology solutions.</p>
+                  -->
+                      <?php echo $d->vision ?>
+                  </div>
+                </div>
+
+                <!-- Posts 2 -->
+                <div class="post-row item">
+                  <div class="left-meta-post">
+
+                    <div class="post-type"><i class="fa fa-globe"></i></div>
+                  </div>
+                  <h3 class="post-title"><a href="#">Mission</a></h3>
+                  <div class="post-content ">
+                      <!--
+                      <p class="font" >Our mission is to provide top quality solutions implemented through the most cost-effective quality controlled mechanism to cover various customers' business requirements.</p>
+                  -->
+                      <?php echo $d->mission ?>
+                  </div>
+                </div>
+
+                <!-- Posts 3 -->
+
+                <div class="post-row item">
+                  <div class="left-meta-post">
+                    <div class="post-type"><i class="fa  fa-cogs "></i></div>
+                  </div>
+                  <h3 class="post-title"><a href="#">Our Values</a></h3>
+                  <div class="post-content ">
+                      <!--
+                    <p class="font">We are guided by Honor and Code of conduct where Integrity and human values are our core ethics.</p>
+                  -->
+                      <?php echo $d->ourvalues ?>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+            <!-- End Recent Posts Carousel -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- End Testimonials Section -->
+
+
+   <!--
+    <div class="section" style="background:#fff;">
+      <div class="container">
+
+
+        <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+          <h1>Our Great <strong>Team</strong></h1>
+        </div>
+
+
+
+          <!--
+        <p class="text-center font">We have top quality, highly skilled staff holding degrees from internationally <span class=" sh-tooltip" data-placement="right" title="Simple Tooltip"> as well as having a large field experience.
+          <br/>Hence, they have the knowledge of both theoretical and applied sides of the world of IT. </br> </span> <span class="accent-color sh-tooltip" data-placement="bottom" title="Simple Tooltip">Additionally,</span>they are certified in a wide range of technologies and products. Moreover, the company is offering them a continuous career path Training in their relevant service line.
+            </p>
+
+          <?php echo $d->team ?>
+
+
+
+        <div class="row">
+
+    </div>
+
+          <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+
+
+          </div>
+
+          </div>
+
+        </div>
+    -->
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+
+    <!-- End Client/Partner Section -->
+
+
+    <!-- Start Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row footer-widgets">
+
+
+        <!-- Start Subscribe & Social Links Widget -->
+        <div class="col-md-6 ">
+          <div class="footer-widget mail-subscribe-widget">
+            <!--
+            <h4>Get in touch<span class="head-line"></span></h4>
+            <p>Join our mailing list to stay up to date and get notices about our new releases!</p>
+            <form class="subscribe">
+                <input type="text" placeholder="mail@example.com">
+                <input type="submit" class="btn-system" value="Send">
+            </form>
+            -->
+          </div>
+
+
+          <div class="col-md-7 col-xs-12">
+            <div class="footer-widget contact-widget">
+
+              <ul>
+                <li><span>Phone Number:</span> +2 010 50 666 57</li>
+                <li><span>Office:</span> +2 27 92 67 06</li>
+                <li><span>Fax:</span> +2 27 92 67 06</li>
+                <li><span>Email:</span> drwagdyyoussef@yahoo.co.uk</li>
+                <li><span>Website:</span>  www.fringeadvancedsolutions.com</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- .col-md-3 -->
+        <!-- End Subscribe & Social Links Widget -->
+
+
+        <!-- Start Twitter Widget -->
+
+        <!-- .col-md-3 -->
+        <!-- End Twitter Widget -->
+
+
+        <!-- Start Flickr Widget -->
+
+        <!-- .col-md-3 -->
+        <!-- End Flickr Widget -->
+
+
+        <!-- Start Contact Widget -->
+
+        <!-- .col-md-3 -->
+        <!-- End Contact Widget -->
+
+
+      </div>
+      <!-- .row -->
+
+      <!-- Start Copyright -->
+      <div class="copyright-section">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2017 Fringe - All Rights Reserved <a rel="nofollow" href="http://fringe.com/"></a> </p>
+          </div>
+          <!-- .col-md-6 -->
+          <div class="col-md-6">
+            <ul class="footer-nav">
+              <li><a href="#">Sitemap</a>
+              </li>
+              <li><a href="#">Privacy Policy</a>
+              </li>
+              <li><a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- .col-md-6 -->
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- End Copyright -->
+
+    </div>
+  </footer>
+    <!-- End Footer Section -->
+
+
+  </div>
+  <!-- End Full Body Container -->
+
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <div id="loader">
+    <div class="spinner">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+    </div>
+  </div>
+<!--
+   Style Switcher
+  <div class="switcher-box">
+    <a class="open-switcher show-switcher"><i class="fa fa-cog fa-2x"></i></a>
+    <h4>Style Switcher</h4>
+    <span>Predefined Color Skins</span>
+    <ul class="colors-list">
+      <li>
+        <a onClick="setActiveStyleSheet('blue'); return false;" title="Blue" class="Blue"></a>
+      </li>
+    </ul>
+    <span>Layout Style</span>
+    <select id="layout-style" class="layout-style">
+      <option value="1">Wide</option>
+      <option value="2">Boxed</option>
+    </select>
+  </div>
+-->
+  <script type="text/javascript" src="Design/front/assets/js/script.js"></script>
+
+</body>
+
+</html>
